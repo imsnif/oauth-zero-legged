@@ -1,0 +1,19 @@
+{
+  "name": "oauth-zero-legged",
+  "version": "0.0.0",
+  "description": "oauth-zero-legged",
+  "main": "OAuthZeroLegged.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xl8/oauth-zero-legged.git"
+  },
+  "author": "eXelate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xl8/oauth-zero-legged/issues"
+  },
+  "homepage": "https://github.com/xl8/oauth-zero-legged"
+}
