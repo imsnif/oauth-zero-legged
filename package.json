@@ -4,7 +4,7 @@
   "description": "oauth-zero-legged",
   "main": "OAuthZeroLegged.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter list"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/xl8/oauth-zero-legged/issues"
   },
-  "homepage": "https://github.com/xl8/oauth-zero-legged"
+  "homepage": "https://github.com/xl8/oauth-zero-legged",
+  "devDependencies": {
+    "mocha": "^2.0.1",
+    "should": "^4.4.1"
+  }
 }
