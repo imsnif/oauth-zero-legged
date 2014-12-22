@@ -1,5 +1,5 @@
-var oauth = require('../OAuthZeroLegged'),
-  should = require('should');
+var oauth   = require('../OAuthZeroLegged'),
+    should  = require('should');
 
 var user = {
   name: 'tj',
