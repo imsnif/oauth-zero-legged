@@ -1,6 +1,6 @@
 {
   "name": "oauth-zero-legged",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "oauth-zero-legged",
   "scripts": {
     "test": "mocha --reporter list"
@@ -17,6 +17,7 @@
   "homepage": "https://github.com/xl8/oauth-zero-legged",
   "devDependencies": {
     "mocha": "^2.0.1",
-    "should": "^4.4.1"
+    "should": "^4.4.1",
+    "sinon": "~1.12.2"
   }
 }
