@@ -7,9 +7,9 @@ It provides oauth signature functionality independently as well as an http clien
 
 #Installation
 You can be fancy and clone the repo from here, or install [npm](http://github.com/isaacs/npm) and run:
-
+```shell
 	npm install oauth-zero-legged
-
+```
 The include you must specify:
 
 	require('Signer') or require('Client')
