@@ -17,7 +17,8 @@ The include you must specify:
 #Usage
 ##Signer
 ```javascript
-    var signer = Signer.createSigner("MyUsername", "MyPassword");
+    var signerLib = require('Signer');
+    var signer = signerLib.createSigner("MyUsername", "MyPassword");
     var signatureBaseString = signer.calcSignatureBaseString("GET", "http://photos.example.net/photos?file=vacation.jpg&size=original");
     var signature = signer.calcOAuthSignature("POST", "http://photos.example.net/photos?file=vacation.jpg&size=original", { "another_param": "its value" });
     var authorizationHeader1 = signer.calcOAuthSignature("PUT", "http://photos.example.net/photos", {}, "1419259401");
@@ -25,7 +26,8 @@ The include you must specify:
 ```
 ##Client
 ```javascript
-    var client = Client.Client();
+    var clientLib = require('Client');
+    var client = clientLib.Client();
     var options = {
         "method":     "GET",
         "url":        "http://photos.example.net/photos?file=vacation.jpg&size=original",
