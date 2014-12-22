@@ -2,7 +2,6 @@
   "name": "oauth-zero-legged",
   "version": "0.0.0",
   "description": "oauth-zero-legged",
-  "main": "OAuthZeroLegged.js",
   "scripts": {
     "test": "mocha --reporter list"
   },
