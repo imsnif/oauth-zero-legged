@@ -16,12 +16,15 @@ The include you must specify:
 
 #Usage
 ##Signer
+```javascript
     var signer = Signer.createSigner("MyUsername", "MyPassword");
     var signatureBaseString = signer.calcSignatureBaseString("GET", "http://photos.example.net/photos?file=vacation.jpg&size=original");
     var signature = signer.calcOAuthSignature("POST", "http://photos.example.net/photos?file=vacation.jpg&size=original", { "another_param": "its value" });
     var authorizationHeader1 = signer.calcOAuthSignature("PUT", "http://photos.example.net/photos", {}, "1419259401");
     var authorizationHeader2 = signer.calcOAuthSignature("PUT", "http://photos.example.net/photos", {}, null, "JuXH8bgWisr");
+```
 ##Client
+```javascript
     var client = Client.Client();
     var options = {
         "method":     "GET",
@@ -46,7 +49,7 @@ The include you must specify:
 
     // without oauth
     client.request(options, my_success_callback, my_failure_callback);
-
+```
 #Tests
 Require mocha.js and should.js.
 
