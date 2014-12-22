@@ -57,6 +57,15 @@ Require mocha.js and should.js.
 
 Executed by running npm test.
 
+## Contributing
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## Release History
+_(Nothing yet)_
+
+## Issues
+Please use the [github issues list](https://github.com/xl8/grunt-coffeelinter/issues) to report any issues. If possible, please include a link to an open github repo with the smallest failing example of your issue. Even better, fork the project, create a failing test case and issue a pull request with the issue number referenced in the pull request. Super better, fork the project create a failing test case, fix the problem, and issue a pull request with the test and fix referencing the issue number. 
+
 ## License
 
 (The MIT License)
