@@ -39,7 +39,7 @@ describe('Signer class', function() {
     });
 
     it('should generate nonce of the requested length', function() {
-        signer.generateNonce(50).length.should.equal(50);
+        signer.generateNonce(50).should.have.length(50);
     });
 
     it('should throw error when requested to calculate signature base string without providing mandatory arguments', function() {
