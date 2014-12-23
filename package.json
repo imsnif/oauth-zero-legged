@@ -23,5 +23,9 @@
   "dependencies": {
     "merge": "^1.2.0",
     "qs": "^2.3.3"
-  }
+  },
+  "keywords": [
+    "OAuth"
+  ]
+
 }

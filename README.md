@@ -52,10 +52,6 @@ The include you must specify:
     // without oauth
     client.request(options, my_success_callback, my_failure_callback);
 ```
-#Tests
-Require mocha.js and should.js.
-
-Executed by running npm test.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
