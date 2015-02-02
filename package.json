@@ -1,6 +1,6 @@
 {
   "name": "oauth-zero-legged",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "oauth-zero-legged",
   "scripts": {
     "test": "mocha --reporter list"
