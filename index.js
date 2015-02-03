@@ -1,7 +1,2 @@
-var signer = require('./lib/Signer');
-var client = require('./lib/Client');
-
-module.exports = {
-		Client: client,
-		Signer: signer
-};
+exports.signer = require('./lib/Signer');
+exports.client = require('./lib/Client');
