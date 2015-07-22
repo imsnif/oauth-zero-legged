@@ -1,5 +1,5 @@
 var
-    clientLib   = require('../lib/Client.js'),
+    client   = require('../lib/Client.js'),
     should      = require('should'),
     http        = require('http'),
     nock        = require('nock');
@@ -21,7 +21,7 @@ describe('Client class', function() {
     });
 
     it('should throw errors if mandatory arguments are not provided', function() {
-        var client = new clientLib.Client();
+
 
         (function() {
             var req = client.request(null, function() {}, function() {}, test_fake_username, test_fake_password);
@@ -68,7 +68,7 @@ describe('Client class', function() {
     });
 
     it('should not put authorization header if no key and secret are provided', function(done) {
-        var client = new clientLib.Client();
+
         var req = client.request({
             method:     "GET",
             url:        test_fake_http_url,
@@ -84,7 +84,6 @@ describe('Client class', function() {
     });
 
     it('should put authorization header if key and secret are provided', function(done) {
-        var client = new clientLib.Client();
         var req = client.request({
             method:     "GET",
             url:        test_fake_http_url,
@@ -100,7 +99,7 @@ describe('Client class', function() {
     });
 
     it('should add to signature base string body parameters', function(done) {
-        var client = new clientLib.Client();
+
         var req = client.request({
             method:     "POST",
             url:        test_fake_http_url + "?f=8&e=9",
@@ -126,7 +125,7 @@ describe('Client class', function() {
     });
 
     it('should not override existing request authorization header', function(done) {
-        var client = new clientLib.Client();
+
         var req = client.request({
             method:     "POST",
             url:        test_fake_http_url + "?f=8&e=9",
