@@ -89,7 +89,8 @@ describe('Signer class', function() {
 
     it('should calc OAuth signature precisely', function() {
         signerLib.createSigner("popeye@exelate.com","^^S,6r5:t;Z#&Tt").calcOAuthSignature("GET", "http://myserver.com:8080/calculate/precisely_and_accurately?a=1&b=2&a=7&a=2&c=78&b=5", {}, "123456789", "abcdefghijklmnop")
-            .should.equal("GfTHeZSw04NXbjAMzS0poYeJ3tU=")
+        signerLib.createSigner("popeye@exelate.com","^^S,6r5:t;Z#&Tt").calcOAuthSignature("GET", "http://myserver.com:8080/calculate/precisely_and_accurately?ap[]=1&a[]=2&a[]=3", {}, "123456789", "abcdefghijklmnop")
+            .should.equal("NB6SYLypxFMkedA4FzyeeIhF8P4=")
         signerLib.createSigner("kyle@exelate.com","plokijl,kmjn").calcOAuthSignature("POST", "http://trial.com/popeye/sailor/man", {}, "1419259401", "JuXH8bgWisr")
             .should.equal("A2Js3ZuA8lwsUISg9aq7OuSuAss=")
     });
